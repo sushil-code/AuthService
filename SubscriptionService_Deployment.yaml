@@ -1,0 +1,35 @@
+﻿
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authservice
+  labels:
+    app: authservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authservice
+  template:
+    metadata:
+      labels:
+        app: authservice
+    spec:
+      containers:
+      - name: authservice
+        image: mailorderpharmacy.azurecr.io/authserviceimage:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: authservicesecret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: authservice-service
+spec:
+ type: LoadBalancer
+ ports:
+ - port: 80
+ selector:
+   app: authservice

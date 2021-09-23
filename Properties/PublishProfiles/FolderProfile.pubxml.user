@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Razj\Desktop\Project\AuthenticationService\AuthenticationService\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2021-09-22T08:31:25.5007492Z;True|2021-09-17T12:33:02.3144236+05:45;</History>
+  </PropertyGroup>
+</Project>
